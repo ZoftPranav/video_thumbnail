@@ -1,3 +1,7 @@
+## Unreleased
+* Migrate Android to Flutter's built-in Kotlin compatibility approach.
+* Require Flutter 3.44 and Dart 3.12 or later.
+
 ## 0.9.1
 * Fix web compile failure on newer Dart by replacing the `setRequestHeader` JS interop tear-off with an explicit closure
 

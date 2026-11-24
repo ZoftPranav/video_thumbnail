@@ -41,6 +41,23 @@ add [get_video_thumbnail](https://pub.dev/packages/get_video_thumbnail) as a dep
 dependencies:
   get_video_thumbnail: ^0.9.1
 ```
+
+To use the built-in Kotlin migration from this fork instead, use Flutter 3.44
+or later and replace the dependency with:
+
+```yaml
+dependencies:
+  get_video_thumbnail:
+    git:
+      url: https://github.com/ZoftPranav/video_thumbnail.git
+      ref: master
+```
+
+Enabling built-in Kotlin in an Android app requires Flutter 3.47 or later and
+AGP 9 or later; follow Flutter's
+[app migration guide](https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers)
+and migrate the app's other plugins as well.
+
 **import**
 ```dart
 import 'package:get_video_thumbnail/get_video_thumbnail.dart';
